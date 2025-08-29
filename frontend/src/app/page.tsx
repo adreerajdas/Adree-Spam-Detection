@@ -85,7 +85,7 @@ export default function Home() {
           🛡️ Email Spam Detector
         </h1>
         <p className="text-gray-400 text-lg mb-8">
-          Paste your email or message and instantly check if it's <br />
+          Paste your email or message and instantly check if it&apos;s <br />
           <span className="text-blue-400 font-semibold">Spam</span> or{" "}
           <span className="text-green-400 font-semibold">Not Spam</span>.
         </p>
