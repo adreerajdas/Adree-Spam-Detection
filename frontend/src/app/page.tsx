@@ -29,7 +29,7 @@ export default function Home() {
   // Function to redirect to GitHub
   const handleGitHubRedirect = () => {
     setIsMenuOpen(false);
-    window.open("https://github.com/your-username/your-repo", "_blank"); // Replace with your repo URL
+    window.open("https://github.com/adreerajdas/Adree-Spam-Detection", "_blank"); // Replace with your repo URL
   };
 
   return (
