@@ -1,121 +1,65 @@
-# Adree Spam Detection
+Adree Spam Detection
 
-A full-stack web application for detecting spam messages using both traditional machine learning and generative AI (Gemini). The project consists of a Python Flask backend and a Next.js React frontend.
+A full-stack web app for detecting spam messages using Naive Bayes (ML) and Google Gemini (AI).
+Backend: Flask (Python) | Frontend: Next.js + Tailwind CSS
 
----
+Project Structure
 
-## Project Structure
-
-```
 Adree-Spam-Detection/
-│
-├── backend/
-│   ├── app.py              # Flask app with ML-based spam detection API
-│   ├── model.py            # Flask app with Gemini AI-based spam detection API
-│   ├── requirements.txt    # Python dependencies
-│   └── SMSSpamCollection   # SMS spam dataset (tab-separated)
-│
-└── frontend/
-    ├── package.json        # Next.js, React, Tailwind, ESLint, etc.
-    ├── README.md           # Next.js default readme
-    ├── public/             # Static assets (SVGs, presentation, etc.)
-    └── src/app/            # Main Next.js app source
-```
+├── backend/    # Flask APIs (ML & Gemini)
+└── frontend/   # Next.js + Tailwind app
 
----
+Backend
+app.py → ML spam detector (Naive Bayes, port 8000)
 
-## Backend
+model.py → Gemini AI spam detector (port 7000)
 
-### Features
-
-- **app.py**: 
-  - Loads SMS spam dataset.
-  - Trains a Naive Bayes classifier using scikit-learn.
-  - Exposes `/predict` endpoint for spam/ham prediction.
-- **model.py**:
-  - Uses Google Gemini generative AI for spam detection.
-  - Exposes `/predict` endpoint for AI-based classification.
-
-### Requirements
-
-- Python 3.8+
-- Flask, Flask-CORS
-- pandas, scikit-learn
-- google-generativeai
-- python-dotenv
-
-Install dependencies:
-```bash
+Run:
 pip install -r backend/requirements.txt
-```
+python backend/app.py      # ML
+python backend/model.py    # AI (needs GOOGLE_API_KEY in backend/.env)
 
-### Running the Backend
 
-- For ML-based API (port 8000):
-  ```bash
-  python backend/app.py
-  ```
-- For Gemini AI-based API (port 7000):
-  ```bash
-  python backend/model.py
-  ```
+Frontend
+Next.js + Tailwind UI for spam/ham detection
 
----
+Connects to backend /predict API
 
-## Frontend
+Run:
 
-### Features
-
-- Built with Next.js, React, and Tailwind CSS.
-- User interface for submitting messages and viewing spam/ham results.
-- Connects to backend `/predict` API.
-
-### Requirements
-
-- Node.js 18+
-- npm, yarn, or pnpm
-
-Install dependencies:
-```bash
 cd frontend
 npm install
-```
-
-### Running the Frontend
-
-```bash
 npm run dev
-```
-Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
----
 
-## Dataset
+Visit → http://localhost:3000
 
-- `backend/SMSSpamCollection`: Tab-separated file with SMS messages labeled as "ham" or "spam".
+Dataset
 
----
+backend/SMSSpamCollection → UCI SMS Spam dataset (ham/spam labels)
 
-## API Endpoints
+API
 
-- **POST /predict** (both backends)
-  - Request: `{ "message": "your message here" }`
-  - Response: `{ "message": "...", "result": "Spam" | "Ham" }` (ML) or `"Spam" | "Not Spam"` (Gemini)
+POST /predict
 
----
+Request: { "message": "your text" }
 
-## Deployment
+Response (ML): { "result": "Spam" | "Ham" }
 
-- Frontend can be deployed on Vercel or any static hosting.
-- Backend can be deployed on any Python-compatible server.
+Response (AI): { "result": "Spam" | "Not Spam" }
 
----
+Deployment
 
-## Credits
+Frontend → Vercel / Netlify
 
-- Dataset: UCI SMS Spam Collection
-- ML: scikit-learn Naive Bayes
-- AI: Google Gemini API
-- Frontend: Next.js, React, Tailwind CSS
+Backend → Render / Railway / Heroku (Procfile + Gunicorn)
 
----
+Credits
+
+Dataset: UCI SMS Spam Collection
+
+ML: scikit-learn Naive Bayes
+
+AI: Google Gemini API
+
+Frontend: Next.js, React, Tailwind CSS
