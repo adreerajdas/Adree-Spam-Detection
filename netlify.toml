@@ -1,0 +1,12 @@
+[build]
+  # The frontend is inside the monorepo at ./frontend
+  base = "frontend"
+  command = "npm ci && npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Enable Netlify's Next.js Runtime for SSR, ISR, middleware, images, etc.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
