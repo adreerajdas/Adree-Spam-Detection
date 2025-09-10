@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Configure Gemini API (better to load from env variable instead of hardcoding)
-genai.configure(api_key="AIzaSyBOMQTHWDimdh9jwI1I-JwWJoFRnRLUSJ4")
+genai.configure(api_key="AIzaSyDOjvAMkIjLxzZcV3ml1ghqayy9OUtdDRI")
 
 # Spam detection function
 def detect_spam(text: str) -> str:
