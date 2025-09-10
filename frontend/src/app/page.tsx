@@ -109,7 +109,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="text-gray-500 text-sm mb-4">
-        Made by <span className="text-white font-semibold">Adree & Ankit</span> | CST 3rd Year
+        Made by <span className="text-white font-semibold">Adree</span> | CST 3rd Year
       </footer>
     </main>
   );
