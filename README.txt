@@ -1,22 +1,8 @@
-<h1 align="center">📧 Adree Spam Detection</h1>
-<h3 align="center">A Full-Stack Web App for Detecting Spam Messages using ML & AI</h3>
 
-<p align="center">
-  <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/7d484dc9-68a9-4ee6-a767-aea59035c12d" width="100%" alt="banner"/>
-</p>
+#Adree Spam Detection
 
----
-
-## 🚀 Tech Stack
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white"/>
-  <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black"/>
-</p>
+A full-stack web app for detecting spam messages using **Naive Bayes (ML)** and **Google Gemini (AI)**.  
+**Backend:** Flask (Python) | **Frontend:** Next.js + Tailwind CSS  
 
 ---
 
@@ -28,9 +14,6 @@ Adree-Spam-Detection/
 ├── backend/    # Flask APIs (ML & Gemini)
 └── frontend/   # Next.js + Tailwind app
 
-````
-
----
 
 ## ⚙️ Backend
 
@@ -38,11 +21,10 @@ Adree-Spam-Detection/
 - **model.py** → Gemini AI spam detector (port **7000**)  
 
 **Run Backend:**
-```bash
+
 pip install -r backend/requirements.txt
 python backend/app.py      # ML
 python backend/model.py    # AI (needs GOOGLE_API_KEY in backend/.env)
-````
 
 ---
 
@@ -53,13 +35,12 @@ python backend/model.py    # AI (needs GOOGLE_API_KEY in backend/.env)
 
 **Run Frontend:**
 
-```bash
 cd frontend
 npm install
 npm run dev
 ```
 
-👉 Visit Live App: [Adree Spam Detection](https://adreespamdetection.netlify.app/)
+👉 Live App: [Adree Spam Detection](https://adreespamdetection.netlify.app/)
 
 ---
 
@@ -69,27 +50,19 @@ npm run dev
 
 ---
 
-## 📡 API Endpoints
+## 📡 API
 
 ### **POST /predict**
 
-**Request:**
+Request
 
-```json
 { "message": "your text" }
-```
 
-**Response (ML):**
-
-```json
+Response (ML):
 { "result": "Spam" | "Ham" }
-```
 
-**Response (AI):**
-
-```json
+Response (AI):
 { "result": "Spam" | "Not Spam" }
-```
 
 ---
 
@@ -100,26 +73,16 @@ npm run dev
 
 ---
 
-## 👏 Credits
+## 🙌 Credits
 
-* 📊 Dataset: [UCI SMS Spam Collection](https://archive.ics.uci.edu/ml/datasets/sms+spam+collection)
-* 🤖 ML: scikit-learn Naive Bayes
-* 🧠 AI: Google Gemini API
-* 🎨 Frontend: Next.js, React, Tailwind CSS
+* Dataset: [UCI SMS Spam Collection](https://archive.ics.uci.edu/ml/datasets/sms+spam+collection)
+* ML: scikit-learn Naive Bayes
+* AI: Google Gemini API
+* Frontend: Next.js, React, Tailwind CSS
 
----
-
-## 📈 Repo Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=adreerajdas&repo=Adree-Spam-Detection&theme=radical" />
-</p>
 ```
 
-✅ Fixes I made:
-
-* Corrected **Next.js badge logo** (`nextdotjs` not `next.js`).
-* Removed extra quotes in repo stats image.
-* Fixed spacing & section breaks so GitHub markdown renders properly.
-
----
+This version is:  
+✅ Clean  
+✅ Easy to read  
+✅ Professional  
