@@ -122,5 +122,3 @@ npm run dev
 * Badges for stack
 * Structured sections (Backend, Frontend, API, Deployment, Credits)
 * GitHub pinned repo card
-
-Do you want me to also **add a "Demo Preview GIF" section** (like showing how spam detection works with an input/output animation)?
