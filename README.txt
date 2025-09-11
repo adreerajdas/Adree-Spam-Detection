@@ -1,11 +1,26 @@
-# Adree Spam Detection
+<h1 align="center">📧 Adree Spam Detection</h1>
+<h3 align="center">A Full-Stack Web App for Detecting Spam Messages using ML & AI</h3>
 
-A full-stack web app for detecting spam messages using **Naive Bayes (ML)** and **Google Gemini (AI)**.  
-**Backend:** Flask (Python) | **Frontend:** Next.js + Tailwind CSS  
+<p align="center">
+  <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/7d484dc9-68a9-4ee6-a767-aea59035c12d" width="100%" alt="banner"/>
+</p>
 
 ---
 
-## Project Structure
+# 🚀 Tech Stack
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black"/>
+</p>
+
+---
+
+# 📂 Project Structure
 
 ```
 
@@ -17,12 +32,12 @@ Adree-Spam-Detection/
 
 ---
 
-## Backend
+# ⚙️ Backend
 
 - **app.py** → ML spam detector (Naive Bayes, port **8000**)  
 - **model.py** → Gemini AI spam detector (port **7000**)  
 
-**Run:**  
+**Run Backend:**
 ```bash
 pip install -r backend/requirements.txt
 python backend/app.py      # ML
@@ -31,12 +46,12 @@ python backend/model.py    # AI (needs GOOGLE_API_KEY in backend/.env)
 
 ---
 
-## Frontend
+# 🎨 Frontend
 
 * Next.js + Tailwind UI for spam/ham detection
 * Connects to backend `/predict` API
 
-**Run:**
+**Run Frontend:**
 
 ```bash
 cd frontend
@@ -44,33 +59,33 @@ npm install
 npm run dev
 ```
 
-Visit → [https://adreespamdetection.netlify.app/](https://adreespamdetection.netlify.app/)
+👉 Visit Live App: [Adree Spam Detection](https://adreespamdetection.netlify.app/)
 
 ---
 
-## Dataset
+# 📊 Dataset
 
 * `backend/SMSSpamCollection` → UCI SMS Spam dataset (ham/spam labels)
 
 ---
 
-## API
+# 📡 API Endpoints
 
-**POST /predict**
+### **POST /predict**
 
-* Request:
+**Request:**
 
 ```json
 { "message": "your text" }
 ```
 
-* Response (ML):
+**Response (ML):**
 
 ```json
 { "result": "Spam" | "Ham" }
 ```
 
-* Response (AI):
+**Response (AI):**
 
 ```json
 { "result": "Spam" | "Not Spam" }
@@ -78,23 +93,34 @@ Visit → [https://adreespamdetection.netlify.app/](https://adreespamdetection.n
 
 ---
 
-## Deployment
+# ☁️ Deployment
 
 * **Frontend** → Vercel / Netlify
 * **Backend** → Render / Railway / Heroku (Procfile + Gunicorn)
 
 ---
 
-## Credits
+# 👏 Credits
 
-* Dataset: [UCI SMS Spam Collection](https://archive.ics.uci.edu/ml/datasets/sms+spam+collection)
-* ML: scikit-learn Naive Bayes
-* AI: Google Gemini API
-* Frontend: Next.js, React, Tailwind CSS
-
-```
+* 📊 Dataset: [UCI SMS Spam Collection](https://archive.ics.uci.edu/ml/datasets/sms+spam+collection)
+* 🤖 ML: scikit-learn Naive Bayes
+* 🧠 AI: Google Gemini API
+* 🎨 Frontend: Next.js, React, Tailwind CSS
 
 ---
 
-Do you want me to **add shields.io badges** (like Python, Flask, Next.js, Netlify) at the top of this README so it looks extra professional on GitHub?
+# 📈 Project Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=adreerajdas&repo=Adree-Spam-Detection&theme=radical" />
+</p>
 ```
+
+✨ This will give your repo README the **same vibe as your profile**:
+
+* Banner at the top
+* Badges for stack
+* Structured sections (Backend, Frontend, API, Deployment, Credits)
+* GitHub pinned repo card
+
+Do you want me to also **add a "Demo Preview GIF" section** (like showing how spam detection works with an input/output animation)?
