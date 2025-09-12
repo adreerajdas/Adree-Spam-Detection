@@ -25,7 +25,7 @@ python backend/app.py      # ML
 
 python backend/model.py    # AI (needs GOOGLE_API_KEY in backend/.env)
 
----
+
 
 ## 🎨 Frontend
 
@@ -64,14 +64,14 @@ Response (ML):
 Response (AI):
 { "result": "Spam" | "Not Spam" }
 
----
+
 
 ## ☁️ Deployment
 
 * **Frontend** → Vercel / Netlify
 * **Backend** → Render / Railway / Heroku (Procfile + Gunicorn)
 
----
+
 
 ## 🙌 Credits
 
