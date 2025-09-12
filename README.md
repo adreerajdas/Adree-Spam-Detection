@@ -1,18 +1,15 @@
-
-#Adree Spam Detection
+# Adree Spam Detection
 
 A full-stack web app for detecting spam messages using **Naive Bayes (ML)** and **Google Gemini (AI)**.  
 **Backend:** Flask (Python) | **Frontend:** Next.js + Tailwind CSS  
 
----
-
 ## 📂 Project Structure
 
-```
+**Adree-Spam-Detection**
 
-Adree-Spam-Detection/
-├── backend/    # Flask APIs (ML & Gemini)
-└── frontend/   # Next.js + Tailwind app
+ backend -- Flask APIs (ML & Gemini)
+ 
+ frontend -- Next.js + Tailwind app
 
 
 ## ⚙️ Backend
@@ -23,7 +20,9 @@ Adree-Spam-Detection/
 **Run Backend:**
 
 pip install -r backend/requirements.txt
+
 python backend/app.py      # ML
+
 python backend/model.py    # AI (needs GOOGLE_API_KEY in backend/.env)
 
 ---
@@ -36,19 +35,20 @@ python backend/model.py    # AI (needs GOOGLE_API_KEY in backend/.env)
 **Run Frontend:**
 
 cd frontend
+
 npm install
+
 npm run dev
-```
 
-👉 Live App: [Adree Spam Detection](https://adreespamdetection.netlify.app/)
 
----
+👉 **Live App**: [Adree Spam Detection](https://adreespamdetection.netlify.app/)
+
+
 
 ## 📊 Dataset
 
 * `backend/SMSSpamCollection` → UCI SMS Spam dataset (ham/spam labels)
 
----
 
 ## 📡 API
 
